@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -54,5 +55,20 @@ header nav ul li a:hover {
   background: var(--purple);
   border-radius: 5px;
 }
-
 /* HEADER & NAV STYLE END */
+
+/* STYLE SECTIONS AND TITLES */
+section {
+    padding: 20px 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.55vw;
+    color: var(--purple);
+    border-bottom: 2px dotted var(--purple);
+    padding-bottom: 10px;
+    width: 45%;
+    margin: 0 auto 10px auto;
+}
+/* SECTIONS & TITLES STYLE END */

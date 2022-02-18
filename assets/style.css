@@ -71,4 +71,27 @@ section {
     width: 45%;
     margin: 0 auto 10px auto;
 }
+
 /* SECTIONS & TITLES STYLE END */
+
+/* UTILITIES */
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ABOUT ME SECTION STYLE */
+.about-me-content {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.about-me-content img {
+    width: 100%;
+    padding-right: 15px;
+}

@@ -118,14 +118,32 @@ section {
     color: var(--dark-grey);
 }
 
-.featured img {
+.featured img, .sites img {
     width: 100%;
 }
 
 .other-work div {
     max-width: 50%;
 }
+/* MY WORK STYLES END */
 
-.sites img {
-    width: 100%;
+/* CONTACT ME STYLES */
+.contact-info {
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 1.45vw;
+    text-align: center;
+}
+
+.contact-info a {
+    color: var(--purple)
+}
+
+/* FOOTER STYLE */
+footer {
+    justify-content: space-between;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    padding: 20px;
+    font-size: 1.2vw;
 }

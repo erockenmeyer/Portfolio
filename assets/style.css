@@ -89,11 +89,16 @@ section {
     font-size: 20px;
     line-height: 1.5;
     margin: 0 auto;
+    display: flex;
 }
 
 .about-me-content img {
     width: 100%;
     padding-right: 15px;
+}
+
+.bio {
+    flex: 1 65%;
 }
 
 /* MY WORK SECTION STYLES */
@@ -103,13 +108,13 @@ section {
 
 .site-name {
     position: absolute;
-    bottom: 5px;
-    left: 10px;
+    bottom: 15px;
     background-color: var(--light-grey);
     color: var(--purple);
     border: 5px solid var(--light-grey);
     font-weight: bold;
     font-size: 1.5vw;
+    padding: 0 0 0 30px;
 }
 
 .site-name:hover {
@@ -146,4 +151,55 @@ footer {
     color: var(--dark-grey);
     padding: 20px;
     font-size: 1.2vw;
+}
+
+/* MEDIA QUERIES FOR SMALLER SCREENS */
+
+@media screen and (max-width: 980px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .site-name {
+        font-size: 24px;
+    }
+
+    .contact-info {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES & SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        position: relative;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+    }
 }

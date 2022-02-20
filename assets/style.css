@@ -86,7 +86,7 @@ section {
 
 /* ABOUT ME SECTION STYLE */
 .about-me-content {
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 1.5;
     margin: 0 auto;
     display: flex;
@@ -153,15 +153,29 @@ footer {
     font-size: 1.2vw;
 }
 
-/* MEDIA QUERIES FOR SMALLER SCREENS */
+/* MEDIA QUERY FOR SMALLER SCREENS */
 
 @media screen and (max-width: 980px) {
+    header {
+        position: relative;
+        justify-content: center;
+        padding: 5px;
+    }
+
     header h1 {
-        font-size: 24px;
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     header nav ul li a {
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 
     .section-title h2 {
@@ -177,29 +191,7 @@ footer {
     }
 
     footer {
-        font-size: 16px;
-    }
-}
-
-/* MEDIA QUERY FOR TABLETS */
-@media screen and (max-width: 768px) {
-    .contact-info {
-        font-size: 20px;
-    }
-
-    footer {
-        font-size: 20px;
-    }
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES & SMALLER */
-@media screen and (max-width: 575px) {
-    header {
-        position: relative;
-        justify-content: center;
-    }
-
-    header h1 {
-        width: 100%;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 }

@@ -30,11 +30,15 @@ a {
 }
 
 h1, h2 {
-    font-family: 'Beau Rivage', serif;
+    font-family: 'Fleur De Leah', serif;
 }
 
 .site-name {
     position: absolute;
-    bottom: 10px;
-    left: 15px;
+    top: 45px;
+    background-color: var(--purple);
+    color: var(--light-grey);
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Beau Rivage', serif;
 }

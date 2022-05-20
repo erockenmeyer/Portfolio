@@ -10,7 +10,7 @@
     --light-grey: #b0b0b0;
 }
 
-header {
+header, footer {
     background-color: var(--light-grey);
     color: var(--purple);
 }
@@ -27,4 +27,14 @@ ul {
 
 a {
     color: var(--purple);
+}
+
+h1, h2 {
+    font-family: 'Beau Rivage', serif;
+}
+
+.site-name {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
 }

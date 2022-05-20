@@ -10,188 +10,21 @@
     --light-grey: #b0b0b0;
 }
 
+header {
+    background-color: var(--light-grey);
+    color: var(--purple);
+}
+
 body {
     background-color: var(--dark-grey);
     color: var(--light-grey);
     font-family: 'Gideon Roman', 'Playfair Display', serif;
 }
 
-/* HEADER & NAV BAR STYLES START */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
-    padding: 15px;
-    font-size: 1.15vw;
+ul {
+    list-style: none;
 }
 
-header a {
-    text-decoration: none;
-    color: var(--dark-grey);
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.35vw;
-}
-
-header nav ul li a:hover {
-  background: var(--purple);
-  border-radius: 5px;
-}
-/* HEADER & NAV STYLE END */
-
-/* STYLE SECTIONS AND TITLES */
-section {
-    padding: 20px 40px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 1.55vw;
+a {
     color: var(--purple);
-    border-bottom: 2px dotted var(--purple);
-    padding-bottom: 10px;
-    width: 45%;
-    margin: 0 auto 10px auto;
-}
-
-/* SECTIONS & TITLES STYLE END */
-
-/* UTILITIES */
-.flex-row {
-    display: flex;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-/* ABOUT ME SECTION STYLE */
-.about-me-content {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    display: flex;
-}
-
-.about-me-content img {
-    width: 100%;
-    padding-right: 15px;
-}
-
-.bio {
-    flex: 1 65%;
-}
-
-/* MY WORK SECTION STYLES */
-.featured, .sites {
-    position: relative;
-}
-
-.site-name {
-    position: absolute;
-    bottom: 15px;
-    background-color: var(--light-grey);
-    color: var(--purple);
-    border: 5px solid var(--light-grey);
-    font-weight: bold;
-    font-size: 1.5vw;
-    padding: 0 0 0 30px;
-}
-
-.site-name:hover {
-    background-color: var(--purple);
-    border: 5px solid var(--purple);
-    color: var(--dark-grey);
-}
-
-.featured img, .sites img {
-    width: 100%;
-}
-
-.other-work div {
-    max-width: 50%;
-}
-/* MY WORK STYLES END */
-
-/* CONTACT ME STYLES */
-.contact-info {
-    margin: 0 auto;
-    font-style: normal;
-    font-size: 1.45vw;
-    text-align: center;
-}
-
-.contact-info a {
-    color: var(--purple)
-}
-
-/* FOOTER STYLE */
-footer {
-    justify-content: space-between;
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
-    padding: 20px;
-    font-size: 1.2vw;
-}
-
-/* MEDIA QUERY FOR SMALLER SCREENS */
-
-@media screen and (max-width: 980px) {
-    header {
-        position: relative;
-        justify-content: center;
-        padding: 5px;
-    }
-
-    header h1 {
-        width: 100%;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    header nav ul li {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    header nav ul li a {
-        font-size: 1.4rem;
-    }
-
-    .section-title h2 {
-        font-size: 32px;
-    }
-
-    .site-name {
-        font-size: 24px;
-    }
-
-    .contact-info {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
 }

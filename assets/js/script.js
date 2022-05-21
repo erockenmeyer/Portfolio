@@ -24,8 +24,6 @@ const getRepos = () => {
 
 // using returned json, iterate through and display repos
 const checkRepos = (repos) => {
-    console.log(repos);
-
     // loop through repos
     for (let i = 0; i < repos.length; i++) {
         // check whether repo is a featured repo
@@ -58,7 +56,7 @@ const displayFeaturedRepo = repo => {
     // assign classes
     linkEl.classList = "position-relative col-auto";
     imgEl.classList = "mw-100";
-    nameEl.classList = "site-name pl-5 pr-1 py-1"
+    nameEl.classList = "featured-site-name pl-5 pr-1 py-1"
 
     // assign link to github repo
     linkEl.setAttribute("href", repo.html_url);
@@ -87,13 +85,24 @@ const displayFeaturedRepo = repo => {
 }
 
 const displayRepo = repo => {
-    // very similar to featured repos, but a few changes
+    // very similar to featured repos, but a few changes (no images!)
     // create containers
-    const divEl = document.createElement("div");
+    const listEl = document.createElement("li");
     const linkEl = document.createElement("a");
-    const imgEl = document.createElement("img");
-    const nameEl = document.createElement("div");
-    console.log(repo.html_url);
+
+    // assign their classes
+    listEl.classList = "sites col-12 col-md-3 row justify-content-center mt-1";
+    linkEl.classList = "site-name w-75";
+
+    // assign link to repo
+    linkEl.setAttribute("href", repo.html_url);
+
+    // assign name of repo
+    linkEl.textContent = repo.name;
+
+    // append append append!
+    listEl.appendChild(linkEl);
+    notFeaturedEl.appendChild(listEl);
 }
 
 // on page load, initiate the script

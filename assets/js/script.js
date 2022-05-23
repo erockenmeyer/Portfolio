@@ -70,7 +70,13 @@ const displayFeaturedRepo = repo => {
         // add name
         nameEl.textContent = "The Spell Book";
     } else if (repo.name === "wizards-code") {
-        // same as above, add later
+        // same as above, basically
+        // set img and alt
+        imgEl.setAttribute("src", "./assets/images/dnd-char-roll.png");
+        imgEl.setAttribute("alt", "a screenshot of the D&D Character Roller website");
+
+        // add name
+        nameEl.textContent = "D&D Character Generator";
     } else {
         // something has gone wrong!
         nameEl.textContent = "Oh no! If you're seeing this, something went wrong. Please let me know!"

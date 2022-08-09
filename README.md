@@ -1,7 +1,7 @@
 # Erik Rockenmeyer: Portfolio
 
 ## Purpose
-A website to display a portfolio of my work
+A simple website to display a portfolio of my work; it updates automatically with the github API to display all of my repositories, though not in detail.
 
 ## Built With
 * HTML
